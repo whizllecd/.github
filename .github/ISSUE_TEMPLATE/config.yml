@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Initiative, Phase or Sub-phase card"
+    url: "https://github.com/whizllecd/whizlle-workspace/issues/new/choose"
+    about: "Cards that span repos live in whizlle-workspace. Open its form chooser there."

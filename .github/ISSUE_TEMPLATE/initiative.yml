@@ -1,0 +1,37 @@
+name: "Initiative"
+description: "A set of work with a finish line, such as BEA. Create it in whizlle-workspace."
+type: "Initiative"
+projects: ["whizllecd/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Create this card in whizlle-workspace.** Initiative, Phase and Sub-phase cards span repos, so they live there ([board spec](https://github.com/whizllecd/whizlle-workspace/blob/main/docs/team-migration/board-spec.md), section 4).
+
+        Give the set a code of 2–5 capital letters, such as `BEA`; the founder adds it as an Initiative option. Plan changes and decisions go as comments on this card.
+
+        No secrets, endpoint names or step-by-step attack details.
+  - type: textarea
+    id: goal
+    attributes:
+      label: "Goal"
+      description: "What this set achieves, in one or two sentences."
+    validations:
+      required: true
+  - type: textarea
+    id: done-when
+    attributes:
+      label: "Done when"
+      description: "The finish line: what is true when every child card is closed."
+    validations:
+      required: true
+  - type: textarea
+    id: plan
+    attributes:
+      label: "Plan"
+      description: "Link to the program plan in whizlle-workspace (a Mac: path until it moves), or No plan yet."
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Notes"
+      description: "The set code, the owner and the latest state, in plain words."

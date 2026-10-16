@@ -1,0 +1,35 @@
+name: "Request"
+description: "A new ask or idea, waiting for the founder's triage."
+type: "Request"
+projects: ["whizllecd/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A request lands as New on the board. The founder triages it: Backlog, a card in a set, or closed.
+
+        No secrets, endpoint names or step-by-step attack details.
+  - type: textarea
+    id: goal
+    attributes:
+      label: "Goal"
+      description: "What you would like, and why it matters."
+    validations:
+      required: true
+  - type: textarea
+    id: done-when
+    attributes:
+      label: "Done when"
+      description: "What would make this request complete."
+    validations:
+      required: true
+  - type: textarea
+    id: plan
+    attributes:
+      label: "Plan"
+      description: "No plan yet, unless one exists; then link it."
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Notes"
+      description: "Who asked, any deadline, and links."

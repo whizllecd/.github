@@ -1,0 +1,37 @@
+name: "Phase"
+description: "A stage inside an initiative. Create it in whizlle-workspace."
+type: "Phase"
+projects: ["whizllecd/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Create this card in whizlle-workspace.** Initiative, Phase and Sub-phase cards span repos, so they live there ([board spec](https://github.com/whizllecd/whizlle-workspace/blob/main/docs/team-migration/board-spec.md), section 4).
+
+        After you create it, add it as a sub-issue of its Initiative card, so the set's progress bar counts it.
+
+        No secrets, endpoint names or step-by-step attack details.
+  - type: textarea
+    id: goal
+    attributes:
+      label: "Goal"
+      description: "What this phase delivers."
+    validations:
+      required: true
+  - type: textarea
+    id: done-when
+    attributes:
+      label: "Done when"
+      description: "What is true when the phase's cards are closed."
+    validations:
+      required: true
+  - type: textarea
+    id: plan
+    attributes:
+      label: "Plan"
+      description: "Link to the phase's plan (a Mac: path until it moves), or No plan yet."
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Notes"
+      description: "What blocks it and the latest state, in plain words. Write cards as repo#N, for example workspace#7."

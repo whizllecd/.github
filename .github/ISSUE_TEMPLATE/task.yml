@@ -1,0 +1,35 @@
+name: "Task"
+description: "One piece of work, in the repo where the code changes."
+type: "Task"
+projects: ["whizllecd/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Open this card in the repo where the code changes ([board spec](https://github.com/whizllecd/whizlle-workspace/blob/main/docs/team-migration/board-spec.md), section 4). If it belongs to a set, add it as a sub-issue of its Phase or Initiative card.
+
+        No secrets, endpoint names or step-by-step attack details.
+  - type: textarea
+    id: goal
+    attributes:
+      label: "Goal"
+      description: "What changes, and for whom."
+    validations:
+      required: true
+  - type: textarea
+    id: done-when
+    attributes:
+      label: "Done when"
+      description: "What someone can see or run to know it is done."
+    validations:
+      required: true
+  - type: textarea
+    id: plan
+    attributes:
+      label: "Plan"
+      description: "Link to the plan file in the repo (a Mac: path until it moves), or No plan yet."
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Notes"
+      description: "The latest state in plain words, and the Batch name if it ships with other cards."

@@ -1,0 +1,35 @@
+name: "Bug"
+description: "Something that does not work as it should."
+type: "Bug"
+projects: ["whizllecd/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Open this card in the repo where the fix goes. For a security problem, describe only its effect here and tell the founder directly.
+
+        No secrets, endpoint names or step-by-step attack details.
+  - type: textarea
+    id: goal
+    attributes:
+      label: "Goal"
+      description: "What goes wrong, where, and what should happen instead."
+    validations:
+      required: true
+  - type: textarea
+    id: done-when
+    attributes:
+      label: "Done when"
+      description: "How we will know it is fixed: the check or test that passes."
+    validations:
+      required: true
+  - type: textarea
+    id: plan
+    attributes:
+      label: "Plan"
+      description: "Link to the fix plan, or No plan yet."
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Notes"
+      description: "When it started, how often, and the app version or commit. Steps to reproduce only if they are safe to share."
