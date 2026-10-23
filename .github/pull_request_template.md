@@ -13,4 +13,4 @@ Closes whizllecd/<repo>#N
 - Review:
 - Receipts:
 
-**Founder's Codex review:** <!-- once every part is on the branch, local checks are green and Evidence is filled: add the codex-review label and the review pack (one pack for a package of small PRs), requested on <date>; then PASS or NEEDS_CORRECTION, with its link -->
+**Founder's Codex review:** <!-- once every part is on the branch, local checks are green and Evidence is filled: post the review pack as a comment on this PR (one per PR) and add the size label and codex-review, or ask the founder for a hand run when PRs must be judged together, requested on <date>; then the verdict (PASS, NEEDS_CORRECTION or BLOCKED), with its link -->
